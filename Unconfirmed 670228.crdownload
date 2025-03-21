@@ -1,0 +1,24 @@
+// Selecting elements
+document.getElementById("registerBtn").addEventListener("click", function() {
+    document.getElementById("loginForm").classList.add("hidden");
+    document.getElementById("registerForm").classList.remove("hidden");
+});
+
+document.getElementById("loginBtn").addEventListener("click", function() {
+    document.getElementById("registerForm").classList.add("hidden");
+    document.getElementById("loginForm").classList.remove("hidden");
+});
+
+// Switching with links
+document.getElementById("switchToRegister").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("loginForm").classList.add("hidden");
+    document.getElementById("registerForm").classList.remove("hidden");
+});
+
+document.getElementById("switchToLogin").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("registerForm").classList.add("hidden");
+    document.getElementById("loginForm").classList.remove("hidden");
+});
+
